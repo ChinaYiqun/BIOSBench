@@ -1,0 +1,11 @@
+name: Scaffold schema check
+on: [push, pull_request]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate placeholder JSON files
+        run: |
+          python3 -m json.tool schemas/task.schema.json > /dev/null
+          python3 -m json.tool examples/task-template.json > /dev/null
