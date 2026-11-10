@@ -1,0 +1,13 @@
+{
+  "id": "example-not-valid",
+  "track": "edk2-ovmf",
+  "source_repository": "https://github.com/tianocore/edk2",
+  "base_commit": "0000000000000000000000000000000000000000",
+  "issue": "PLACEHOLDER ONLY: describe a real firmware defect here.",
+  "oracle": {
+    "build": "TODO: pinned build validation",
+    "behavioral": "TODO: independently verified hidden functional oracle",
+    "regression": "TODO: existing tests"
+  },
+  "status": "draft"
+}
